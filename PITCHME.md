@@ -4,13 +4,13 @@
 
 ---
 
-## Tips!
+## Me!
 
 <br>
 
-@fa[arrows gp-tip](Press F to go Fullscreen)
+@fa[arrows gp-tip](Front-end Developer @ Zalo)
 
-@fa[microphone gp-tip](Press S for Speaker Notes)
+@fa[microphone gp-tip](Speak JS, ReactJS, NodeJS)
 
 ---
 
