@@ -56,7 +56,7 @@ const Greeting = (props, context) => {
 }
 ```
 
-@[1,11](Normal way to define a component.)
+@[0,11](Normal way to define a component.)
 @[13-21](A brilliant way to define a component.)
 
 ---?gist=onetapbeyond/494e0fecaf0d6a2aa2acadfb8eb9d6e8&lang=scala&title=Scala GIST
