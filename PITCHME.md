@@ -16,12 +16,14 @@
 
 ## Template Features
 
-- Code Presenting |
-- Repo Source, Static Blocks, GIST |
-- Custom CSS Styling |
-- Slideshow Background Image |
-- Slide-specific Background Images |
-- Custom Logo, TOC, and Footnotes |
+- Stateless function |
+- JSX Spread Attributes |
+- Destructuring arguments |
+- Conditional Rendering |
+- Function as children |
+- Container component |
+- State hoisting |
+- Layout component 
 
 ---?code=src/go/server.go&lang=golang&title=Golang File
 
