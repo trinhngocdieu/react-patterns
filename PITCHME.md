@@ -23,7 +23,7 @@
 - Function as children |
 - Container component |
 - State hoisting |
-- Layout component 
+- Layout component |
 
 ---?code=src/go/server.go&lang=golang&title=Golang File
 
