@@ -1,6 +1,6 @@
-# Blue
+# React Patterns
 
-### A GitPitch Presentation Template
+### Build React Application in a Smart Way
 
 ---
 
