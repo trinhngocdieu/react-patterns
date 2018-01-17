@@ -25,44 +25,39 @@
 - State hoisting |
 - Layout component |
 
----?code=src/go/server.go&lang=golang&title=Golang File
-
-@[1,3-6](Present code found within any repo source file.)
-@[8-18](Without ever leaving your slideshow.)
-@[19-28](Using GitPitch code-presenting with (optional) annotations.)
 
 ---
 
-@title[JavaScript Block]
+@title[Stateless Function]
 
-<p><span class="slide-title">JavaScript Block</span></p>
+<p><span class="slide-title">Stateless Function</span></p>
 
 ```javascript
-// Include http module.
-var http = require("http");
+// Normal way to define a component
+class Greeting extends React.Component {
+  constructor() {
+    super();
+  }
+  componentDidMount() {}
+  
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+}
 
-// Create the server. Function passed as parameter
-// is called on every request made.
-http.createServer(function (request, response) {
-  // Attach listener on end event.  This event is
-  // called when client sent, awaiting response.
-  request.on("end", function () {
-    // Write headers to the response.
-    // HTTP 200 status, Content-Type text/plain.
-    response.writeHead(200, {
-      'Content-Type': 'text/plain'
-    });
-    // Send data and end response.
-    response.end('Hello HTTP!');
-  });
+// Don’t hold state; they’re just functions.
+const Greeting = (props, context) => {
+  const style = {
+    fontWeight: "bold",
+    color: context.color,
+  }
 
-// Listen on the 8080 port.
-}).listen(8080);
+  return <div style={style}>{props.name}</div>
+}
 ```
 
-@[1,2](You can present code inlined within your slide markdown too.)
-@[9-17](Displayed using code-syntax highlighting just like your IDE.)
-@[19-20](Again, all of this without ever leaving your slideshow.)
+@[1,11](Normal way to define a component.)
+@[13-21](A brilliant way to define a component.)
 
 ---?gist=onetapbeyond/494e0fecaf0d6a2aa2acadfb8eb9d6e8&lang=scala&title=Scala GIST
 
