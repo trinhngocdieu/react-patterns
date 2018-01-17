@@ -14,7 +14,7 @@
 
 ---
 
-## Template Features
+## Content
 
 - Stateless function |
 - JSX Spread Attributes |
