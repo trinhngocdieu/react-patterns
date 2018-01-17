@@ -1,6 +1,6 @@
 # React Patterns
 
-### Build React Application in a Smart Way
+### @trinhngocdieu
 
 ---
 
