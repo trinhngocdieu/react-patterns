@@ -33,7 +33,6 @@
 <p><span class="slide-title">Stateless Function</span></p>
 
 ```javascript
-// Normal way to define a component
 class Greeting extends React.Component {
   constructor() {
     super();
