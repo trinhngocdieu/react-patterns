@@ -79,6 +79,8 @@ const Greeting = (props, context) => {
 @[1,2](Props written as attributes)
 @[3,4](Props "spread" from object)
 
+
+---
 ## Template Help
 
 - [Code Presenting](https://github.com/gitpitch/gitpitch/wiki/Code-Presenting)
