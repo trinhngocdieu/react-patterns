@@ -104,7 +104,7 @@ const FancyDiv = ({ className, ...props }) =>
   />
 ```
 
-@[0,2](Props "spread" from object)
+@[0-2](Props "spread" from object)
 @[3-8](Forward to another component)
 @[10-13](`className` clobbers your `className`)
 @[14-18](separate className and spread the remains)
