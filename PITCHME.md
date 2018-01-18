@@ -76,8 +76,9 @@ const Greeting = ({ name, ...props }) =>
   
 ```
 
-@[0,1](ES6 feature.)
+@[0,2](ES6 feature.)
 @[3-5](Using REST PARAMETER to collect all the remaining props)
+
 ---
 
 @title[JSX Spread Attributes]
