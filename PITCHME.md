@@ -17,14 +17,13 @@
 ## Content
 
 - Stateless function |
-- JSX Spread Attributes |
 - Destructuring arguments |
+- JSX Spread Attributes |
 - Conditional Rendering |
-- Function as children |
+- Render callback |
+- Layout component |
 - Container component |
 - State hoisting |
-- Layout component |
-
 
 ---
 
