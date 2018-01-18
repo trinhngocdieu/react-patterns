@@ -71,6 +71,7 @@ const Greeting = props => <div>Hi {props.name}!</div>
 
 const Greeting = ({ name }) => <div>Hi {name}!</div>
 
+
 const Greeting = ({ name, ...props }) =>
   <div>Hi {name}!</div>
   
@@ -78,7 +79,7 @@ const Greeting = ({ name, ...props }) =>
 ```
 
 @[0,2](ES6 feature.)
-@[4-5](Using REST PARAMETER to collect all the remaining props)
+@[5-7](Using REST PARAMETER to collect all the remaining props)
 
 ---
 
