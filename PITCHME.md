@@ -76,7 +76,7 @@ const Greeting = (props, context) => {
 
 ```
 
-@[1,2](Props written as attributes)
+@[0,1](Props written as attributes)
 @[3,4](Props "spread" from object)
 
 
