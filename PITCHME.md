@@ -205,7 +205,6 @@ class HorizontalSplit extends React.Component {
   }
 }
 ```
-@[0-10]()
 
 ---
 
