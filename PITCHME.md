@@ -133,9 +133,28 @@ const FancyDiv = ({ className, ...props }) =>
 <p><span class="slide-title">Render Callback</span></p>
 
 ```javascript
+const Width = ({ children }) => children(500)
+
+<Width>
+  {width => <div>window is {width}</div>}
+</Width>
+
+// output
+<div>window is 500</div>
+
+<Width>
+  {width =>
+    width > 600
+      ? <div>min-width requirement met!</div>
+      : null
+  }
+</Width>
 
 ```
-@[0-10]()
+@[0-1](children as FUNCTION, with argument 500)
+@[2-7](give it a FUNCTION as children)
+@[9-15](make rendering decision)
+
 
 ---
 
@@ -164,9 +183,9 @@ const FancyDiv = ({ className, ...props }) =>
 
 ### References
 
-- #### [React Official Site  @fa[external-link gp-download]](https://gitpitch.com/gitpitch/templates/blue)
+- #### [React Site @fa[external-link gp-download]](https://gitpitch.com/gitpitch/templates/blue)
 - #### [React Patterns @fa[external-link gp-download]](https://gitpitch.com/gitpitch/templates/blue?p=codemax)
-- #### [Slide @fa[external-link gp-download]](https://gitpitch.com/gitpitch/templates/blue?p=speaker)
+- #### [My Slide @fa[external-link gp-download]](https://gitpitch.com/gitpitch/templates/blue?p=speaker)
 
 ---
 
@@ -182,5 +201,5 @@ const FancyDiv = ({ className, ...props }) =>
 @title[Thank You!]
 
 ### <span class="white">Thank for your attention!</span>
-### [Download this template @fa[external-link gp-download]](https://gitpitch.com/template/download/blue)
+### [Have a nice weekend @fa[external-link gp-download]](https://gitpitch.com/template/download/blue)
 
