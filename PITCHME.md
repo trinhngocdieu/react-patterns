@@ -61,7 +61,6 @@ const Greeting = (props, context) => {
 @[13-22](Example: UserInfo, Flag Selector, ...)
 
 ---
-
 @title[Destructuring Arguments]
 
 <p><span class="slide-title">Destructuring Arguments</span></p>
@@ -72,11 +71,9 @@ const Greeting = ({ name }) => <div>Hi {name}!</div>
 
 const Greeting = ({ name, ...props }) =>
   <div>Hi {name}!</div>
-  
-  
 ```
 
-@[0,2](ES6 feature.)
+@[0,1](ES6 feature.)
 @[3-5](Using REST PARAMETER to collect all the remaining props)
 
 ---
