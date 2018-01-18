@@ -62,9 +62,6 @@ const Greeting = (props, context) => {
 
 ---
 
-
----
-
 @title[JSX Spread Attributes]
 
 <p><span class="slide-title">JSX Spread Attributes</span></p>
