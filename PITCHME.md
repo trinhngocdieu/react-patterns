@@ -81,22 +81,15 @@ const Greeting = (props, context) => {
 
 
 ---
-## Template Help
 
-- [Code Presenting](https://github.com/gitpitch/gitpitch/wiki/Code-Presenting)
-  + [Repo Source](https://github.com/gitpitch/gitpitch/wiki/Code-Delimiter-Slides), [Static Blocks](https://github.com/gitpitch/gitpitch/wiki/Code-Slides), [GIST](https://github.com/gitpitch/gitpitch/wiki/GIST-Slides) 
-- [Custom CSS Styling](https://github.com/gitpitch/gitpitch/wiki/Slideshow-Custom-CSS)
-- [Slideshow Background Image](https://github.com/gitpitch/gitpitch/wiki/Background-Setting)
-- [Slide-specific Background Images](https://github.com/gitpitch/gitpitch/wiki/Image-Slides#background)
-- [Custom Logo](https://github.com/gitpitch/gitpitch/wiki/Logo-Setting), [TOC](https://github.com/gitpitch/gitpitch/wiki/Table-of-Contents), and [Footnotes](https://github.com/gitpitch/gitpitch/wiki/Footnote-Setting)
 
 ---
 
-### Template Versions
+### References
 
-- #### [Base Template  @fa[external-link gp-download]](https://gitpitch.com/gitpitch/templates/blue)
-- #### [Code Maximized @fa[external-link gp-download]](https://gitpitch.com/gitpitch/templates/blue?p=codemax)
-- #### [Speaker Notes @fa[external-link gp-download]](https://gitpitch.com/gitpitch/templates/blue?p=speaker)
+- #### [React Official Site  @fa[external-link gp-download]](https://gitpitch.com/gitpitch/templates/blue)
+- #### [React Patterns @fa[external-link gp-download]](https://gitpitch.com/gitpitch/templates/blue?p=codemax)
+- #### [Slide @fa[external-link gp-download]](https://gitpitch.com/gitpitch/templates/blue?p=speaker)
 
 ---
 
@@ -104,11 +97,8 @@ const Greeting = (props, context) => {
 
 <br>
 
-@fa[twitter gp-contact](@gitpitch)
+@fa[twitter gp-contact](@trinhngocdieu)
 
-@fa[github gp-contact](gitpitch)
-
-@fa[medium gp-contact](@gitpitch)
 
 ---?image=assets/image/gitpitch-audience.jpg
 
