@@ -68,9 +68,7 @@ const Greeting = (props, context) => {
 
 ```javascript
 const Greeting = props => <div>Hi {props.name}!</div>
-
 const Greeting = ({ name }) => <div>Hi {name}!</div>
-
 
 const Greeting = ({ name, ...props }) =>
   <div>Hi {name}!</div>
@@ -78,9 +76,8 @@ const Greeting = ({ name, ...props }) =>
   
 ```
 
-@[0,2](ES6 feature.)
-@[5-7](Using REST PARAMETER to collect all the remaining props)
-
+@[0,1](ES6 feature.)
+@[3-5](Using REST PARAMETER to collect all the remaining props)
 ---
 
 @title[JSX Spread Attributes]
