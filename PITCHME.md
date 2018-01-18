@@ -71,14 +71,29 @@ const Greeting = (props, context) => {
 
 ```javascript
 <main className="main" role="main">{children}</main>
-
 <main {...{className: "main", role: "main", children}} />
 
+const FancyDiv = props =>
+  <div className="fancy" {...props} />
+  
+// Example
+<FancyDiv data-id="my-fancy-div">So Fancy</FancyDiv>
+// output: <div className="fancy" data-id="my-fancy-div">So Fancy</div>
+
+const FancyDiv = props =>
+  <div {...props} className="fancy" />
+  
+const FancyDiv = ({ className, ...props }) =>
+  <div
+    className={["fancy", className].join(' ')}
+    {...props}
+  />
 ```
 
-@[0,1](Props written as attributes)
-@[3,4](Props "spread" from object)
-
+@[0,2](Props "spread" from object)
+@[3,8](Forward to another component)
+@[10,13](`className` clobbers your `className`)
+@[14,18](separate className and spread the remains)
 
 ---
 
