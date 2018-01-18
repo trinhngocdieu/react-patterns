@@ -177,7 +177,7 @@ class WindowWidth extends React.Component {
 @[0-1](children as FUNCTION, with argument 500)
 @[2-8](give it a FUNCTION as children)
 @[9-16](make rendering decision)
-@[18-31](example)
+@[18-40](example)
 
 
 ---
@@ -187,7 +187,23 @@ class WindowWidth extends React.Component {
 <p><span class="slide-title">Layout Component</span></p>
 
 ```javascript
+<HorizontalSplit
+  leftSide={<SomeSmartComponent />}
+  rightSide={<AnotherSmartComponent />}
+/>
 
+class HorizontalSplit extends React.Component {
+  shouldComponentUpdate() {
+    return false
+  }
+
+  render() {
+    <FlexContainer>
+      <div>{this.props.leftSide}</div>
+      <div>{this.props.rightSide}</div>
+    </FlexContainer>
+  }
+}
 ```
 @[0-10]()
 
@@ -198,12 +214,37 @@ class WindowWidth extends React.Component {
 <p><span class="slide-title">Layout Component</span></p>
 
 ```javascript
+const CommentList = ({ comments }) =>
+  <ul>
+    {comments.map(comment =>
+      <li>{comment.body}-{comment.author}</li>
+    )}
+  </ul>
+  
+class CommentListContainer extends React.Component {
+  constructor() {
+    super()
+    this.state = { comments: [] }
+  }
 
+  componentDidMount() {
+    $.ajax({
+      url: "/my-comments.json",
+      dataType: 'json',
+      success: comments =>
+        this.setState({comments: comments});
+    })
+  }
+
+  render() {
+    return <CommentList comments={this.state.comments} />
+  }
+}
 ```
-@[0-10](// State hoisting)
+@[0-6](// Reusable Components)
+@[7-25](// Fetching data, rendering CommentList)
 
 ---
-
 
 ### References
 
