@@ -60,13 +60,24 @@ const Greeting = (props, context) => {
 @[0,11](Normal way to define a component.)
 @[13-22](Example: UserInfo, Flag Selector, ...)
 
----?gist=onetapbeyond/494e0fecaf0d6a2aa2acadfb8eb9d6e8&lang=scala&title=Scala GIST
+---
 
-@[23](You can even present code found within any GitHub GIST.)
-@[41-53](GIST source code is beautifully rendered on any slide.)
-@[57-62](And code-presenting works seamlessly for GIST too, both online and offline.)
 
 ---
+
+@title[JSX Spread Attributes]
+
+<p><span class="slide-title">JSX Spread Attributes</span></p>
+
+```javascript
+<main className="main" role="main">{children}</main>
+
+<main {...{className: "main", role: "main", children}} />
+
+```
+
+@[1,2](Props written as attributes)
+@[3,4](Props "spread" from object)
 
 ## Template Help
 
