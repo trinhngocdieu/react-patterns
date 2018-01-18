@@ -73,7 +73,8 @@ const Greeting = ({ name, ...props }) =>
   <div>Hi {name}!</div>
 ```
 
-@[0,1](ES6 feature.)
+
+@[0,2](ES6 feature)
 @[3-5](Using REST PARAMETER to collect all the remaining props)
 
 ---
@@ -109,8 +110,24 @@ const FancyDiv = ({ className, ...props }) =>
 @[14-18](separate className and spread the remains)
 
 ---
+@title[Conditional Rendering]
 
+<p><span class="slide-title">Conditional Rendering</span></p>
 
+```javascript
+// if
+{condition && <span>Rendered when `truthy`</span> }
+
+// unless
+{condition || <span>Rendered when `falsey`</span> }
+
+// if -- else 
+{condition
+  ? <span>Rendered when `truthy`</span>
+  : <span>Rendered when `falsey`</span>
+}
+```
+@[0-10](Our JSX Structure will be clearer)
 ---
 
 ### References
