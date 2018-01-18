@@ -23,8 +23,6 @@
 - Render callback |
 - Layout component |
 - Container component |
-- State hoisting |
-
 ---
 
 @title[Stateless Function]
@@ -73,7 +71,7 @@ const Greeting = ({ name, ...props }) =>
 ```
 
 
-@[0,2](ES6 feature)
+@[0-2](ES6 feature)
 @[3-5](Using REST PARAMETER to collect all the remaining props)
 
 ---
@@ -127,7 +125,42 @@ const FancyDiv = ({ className, ...props }) =>
 }
 ```
 @[0-10](Our JSX Structure will be clearer)
+
 ---
+
+@title[Render Callback]
+
+<p><span class="slide-title">Render Callback</span></p>
+
+```javascript
+
+```
+@[0-10]()
+
+---
+
+@title[Layout Component]
+
+<p><span class="slide-title">Layout Component</span></p>
+
+```javascript
+
+```
+@[0-10]()
+
+---
+
+@title[Container Component]
+
+<p><span class="slide-title">Layout Component</span></p>
+
+```javascript
+
+```
+@[0-10](// State hoisting)
+
+---
+
 
 ### References
 
@@ -146,8 +179,8 @@ const FancyDiv = ({ className, ...props }) =>
 
 ---?image=assets/image/gitpitch-audience.jpg
 
-@title[Download this Template!]
+@title[Thank You!]
 
-### <span class="white">Get your presentation started!</span>
+### <span class="white">Thank for your attention!</span>
 ### [Download this template @fa[external-link gp-download]](https://gitpitch.com/template/download/blue)
 
