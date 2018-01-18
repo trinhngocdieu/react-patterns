@@ -150,10 +150,34 @@ const Width = ({ children }) => children(500)
   }
 </Width>
 
+// Rendering our app depends on with 
+class WindowWidth extends React.Component {
+  constructor() {
+    super()
+    this.state = { width: 0 }
+  }
+
+  componentDidMount() {
+    this.setState(
+      {width: window.innerWidth},
+      window.addEventListener(
+        "resize",
+        ({ target }) =>
+          this.setState({width: target.innerWidth})
+      )
+    )
+  }
+
+  render() {
+    return this.props.children(this.state.width)
+  }
+}
+
 ```
 @[0-1](children as FUNCTION, with argument 500)
-@[2-7](give it a FUNCTION as children)
-@[9-15](make rendering decision)
+@[2-8](give it a FUNCTION as children)
+@[9-16](make rendering decision)
+@[18-31](example)
 
 
 ---
