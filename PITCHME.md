@@ -62,6 +62,26 @@ const Greeting = (props, context) => {
 
 ---
 
+@title[Destructuring Arguments]
+
+<p><span class="slide-title">Destructuring Arguments</span></p>
+
+```javascript
+const Greeting = props => <div>Hi {props.name}!</div>
+
+const Greeting = ({ name }) => <div>Hi {name}!</div>
+
+const Greeting = ({ name, ...props }) =>
+  <div>Hi {name}!</div>
+  
+  
+```
+
+@[0,2](ES6 feature.)
+@[4-5](Using REST PARAMETER to collect all the remaining props)
+
+---
+
 @title[JSX Spread Attributes]
 
 <p><span class="slide-title">JSX Spread Attributes</span></p>
