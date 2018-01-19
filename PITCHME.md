@@ -44,10 +44,10 @@ class Greeting extends React.Component {
 
 // A brilliant way to define a component.
 // Don’t hold state; they’re just functions.
-const Greeting = (props, context) => {
+const Greeting = (props) => {
   const style = {
     fontWeight: "bold",
-    color: context.color,
+    color: "blue",
   }
 
   return <div style={style}>{props.name}</div>
