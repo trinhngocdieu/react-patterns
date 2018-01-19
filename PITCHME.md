@@ -247,9 +247,9 @@ class CommentListContainer extends React.Component {
 
 ### References
 
-- #### [React Site @fa[external-link gp-download]](https://gitpitch.com/gitpitch/templates/blue)
-- #### [React Patterns @fa[external-link gp-download]](https://gitpitch.com/gitpitch/templates/blue?p=codemax)
-- #### [My Slide @fa[external-link gp-download]](https://gitpitch.com/gitpitch/templates/blue?p=speaker)
+- #### [React Site @fa[external-link gp-download]](https://reactjs.org/)
+- #### [React Patterns @fa[external-link gp-download]](https://egghead.io/courses/advanced-react-component-patterns)
+- #### [My Site @fa[external-link gp-download]](https://trinhngocdieu.com)
 
 ---
 
@@ -264,6 +264,6 @@ class CommentListContainer extends React.Component {
 
 @title[Thank You!]
 
-### <span class="white">Thank for your attention!</span>
+### <span class="white">Thanks for your attention!</span>
 ### [Have a nice weekend @fa[external-link gp-download]](https://gitpitch.com/template/download/blue)
 
