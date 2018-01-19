@@ -210,7 +210,7 @@ class HorizontalSplit extends React.Component {
 
 @title[Container Component]
 
-<p><span class="slide-title">Layout Component</span></p>
+<p><span class="slide-title">Container Component</span></p>
 
 ```javascript
 const CommentList = ({ comments }) =>
